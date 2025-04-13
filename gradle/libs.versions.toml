@@ -1,0 +1,126 @@
+#[developer]
+#name = "Anand Kumar"
+#email = "aanandkumarbind9682@gmail.com"
+#website = "http://tonightindia.in.net"
+#github = "https://github.com/anandkumar9682
+
+[versions]
+accompanistNavigationAnimation = "0.32.0"
+cameraCamera2 = "1.3.0"
+faceDetectionVersion = "16.1.5"
+googleServices = "4.3.14"
+gradle = "8.1.1"
+hiltAndroidGradlePlugin = "2.50"
+kotlin = "1.9.22"
+composeCompiler = "1.5.8"
+composeBom = "2024.02.02"
+hilt = "2.50"
+kotlinGradlePlugin = "1.9.22"
+kotlinxSerializationJson = "1.6.0"
+navigationSafeArgsGradlePlugin = "2.7.4"
+playServicesAuth = "20.7.0"
+retrofit = "2.9.0"
+okhttp = "4.12.0"
+gson = "2.8.8"
+gsonConverter = "2.9.0"
+room = "2.6.1"
+firebaseDatabase = "20.0.3"
+firebaseBom = "33.7.0"
+firebaseCrashlytics = "3.0.2"
+navigationCompose = "2.7.6"
+leakcanary = "2.9.1"
+constraintlayout = "1.0.1"
+zxingAndroidEmbedded = "4.3.0"
+androidGradlePlugin = "8.7.2"
+ksp = "1.9.22-1.0.17"
+uiTestJunit4 = "1.6.0"
+gmsGoogleService = "4.4.2"
+coil = "2.4.0"
+pullRefresh = "0.36.0"
+
+# It used in app gradle file
+compileSdk = "34"
+minSdk = "25"
+targetSdk = "34"
+versionCode = "1"
+versionName = "1.0"
+namespace = "com.asuni.zenithra"
+applicationId = "com.asuni.zenithra"
+appName = "Zenithra"
+composeMaterial = "1.4.1"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+gms-google-services = { id = "com.google.gms.google-services", version.ref = "gmsGoogleService" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlytics" }
+
+[libraries]
+accompanist-navigation-animation = { module = "com.google.accompanist:accompanist-navigation-animation", version.ref = "accompanistNavigationAnimation" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCamera2" }
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCamera2" }
+androidx-camera-extensions = { module = "androidx.camera:camera-extensions", version.ref = "cameraCamera2" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraCamera2" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraCamera2" }
+androidx-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigationSafeArgsGradlePlugin" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+accompanist-swiperefresh = { group = "com.google.accompanist", name = "accompanist-swiperefresh", version.ref = "pullRefresh" }
+
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gsonConverter" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.12.0" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version = "2.7.0" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.8.2" }
+
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-animation = { group = "androidx.compose.animation", name = "animation" }
+androidx-compose-ui-toolingPreview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "uiTestJunit4" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+
+hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hiltAndroidGradlePlugin" }
+junit = { group = "junit", name = "junit", version = "4.13.2" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version = "1.1.5" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version = "3.5.1" }
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.1.0" }
+
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+mlkit-face-detection = { module = "com.google.mlkit:face-detection", version.ref = "faceDetectionVersion" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+timber = { group = "com.jakewharton.timber", name = "timber", version = "5.0.1" }
+
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+leakcanary-android = { group = "com.squareup.leakcanary", name = "leakcanary-android", version.ref = "leakcanary" }
+
+constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayout" }
+ccp = { group = "com.hbb20", name = "ccp", version = "2.7.0" }
+
+zxing-android-embedded = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "zxingAndroidEmbedded" }
+androidx-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "composeMaterial" }
+
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database-ktx", version.ref = "firebaseDatabase" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx" }

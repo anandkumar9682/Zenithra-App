@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.asuni.zenithra.app-mergeStageDebugResources-97:/values-notnight-v8/values-notnight-v8.xml",
+            "map": [
+                {
+                    "source": "/Users/anandkumar/StudioProjects/Test/acviss-android/app/src/main/res/values-notnight/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "263"
+                    }
+                }
+            ]
+        }
+    ]
+}

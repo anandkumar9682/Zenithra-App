@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$USER_HOME$/Library/Android/sdk/platforms/android-34/data/res/layout/simple_spinner_item.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3dc3b99-a815-4f93-996e-2edc585a526a" name="Changes" comment="Biocon app-">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/mercantile.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ReleaseNotes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ComposeApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/database/DetailsEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/database/Room.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/database/UserEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/di/DatabaseModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/di/NetworkModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/di/SharedPreferenceModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/domain/DeleteFrom.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/domain/Details.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/domain/User.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/network/UsersApi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/network/model/ApiResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/network/model/ApiResponseResult.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/network/model/DeleteMappingRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/network/model/MappingRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/network/model/UserProfileResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/repository/UsersRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/WebViewActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/account/AccountScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/account/DialogForLogoutConfirmation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/authentication/CustomOtpInput.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/authentication/LoginScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/authentication/MobileAuthScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/authentication/OTPVerificationScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/authentication/models/OtpRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/authentication/models/VerifyOtpRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/components/NoNetwork.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/history/BottomSheetForHistoryDetails.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/history/DialogForDeleteConfirmation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/history/HistoryItemScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/history/HistoryScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/scanner/BackgroundCameraFocusScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/scanner/DialogForLoading.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/scanner/DialogForPartInput.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/scanner/ScanScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/scanner/ScannedResultScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/scanner/StepView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/scanner/TabIndicatorScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/scanner/ViewFinderOverlay.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/splash/ComposeApp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/splash/DashboardScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/splash/DialogForUpdateApp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/splash/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/splash/NavRoute.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/splash/SplashScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/theme/Color.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/theme/Shape.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/ui/theme/Type.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/util/AppUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/util/DateFormatter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/util/LogUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/util/NavExtensions.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/util/NetworkUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/util/helper/SharedPreferenceHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/viewmodels/UsersViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/acviss_techo_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dummy_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/full_logo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_offline.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_account.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_barcode_v2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_calander.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_camera.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_delete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_down_arrow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_fillter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_gallery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_green_done_v2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_history.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_info_v2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_logout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_qrcode_v2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_refresh_v2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_scan_v2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_scanned_failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_scanned_loading.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_scanned_successful.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_scanner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_sound_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_sound_on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_success.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_success.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_tourch_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_tourch_on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/icon_water_mark_v2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_arrow_forward.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_qr_scanner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/iphone_13_mini___16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_qr_scanner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/water_mark_named.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/error_sound.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/music_scan_instruction.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/success_sound.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dim.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keys/keystore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=JFORRSEM6HEE8HWG)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Mercantile" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Enum" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
+        <option value="valueResourceFile" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/keys/Keys.jks" />
+    <option name="KEY_ALIAS" value="zenithra" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="biocon_master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;searchQuery&quot;: &quot;mer&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;searchQuery&quot;: &quot;mer&quot;
+  }
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: []
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/acviss/acviss-android.git&quot;,
+    &quot;accountId&quot;: &quot;b3cdea3b-364c-4781-b7a0-c1e86d839a0a&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;acviss&quot;,
+    &quot;repository&quot;: &quot;acviss-android&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2pCMbuKfOQQ4aRL8MvwNdGr8GFv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.acviss-android.Mercantile.app.executor": "Run",
+    "Android App.app.executor": "Run",
+    "ApkExportedModule": "Acviss.app",
+    "BundleExportedModule": "Mercantile.app",
+    "ExportApk.ApkPathForAcviss.app": "/Users/anandkumar/StudioProjects/acviss-android/app",
+    "ExportBundle.BundlePathForAcviss.app": "/Users/anandkumar/StudioProjects/acviss-android/app",
+    "ExportBundle.BundlePathForMercantile.app": "/Users/anandkumar/StudioProjects/acviss-android/app",
+    "ExportBundle.BundlePathForProduct_Tracking_System.app": "/Users/anandkumar/StudioProjects/acviss-android/app",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.acviss-android [./gradlew assable].executor": "Run",
+    "Gradle.acviss-android [./gradlew publishToMavenLocal].executor": "Run",
+    "Gradle.acviss-android [assamble].executor": "Run",
+    "PROJECT_TRUSTED_KEY": "true",
+    "ResourceManagerPrefKey.ResourceType": "DRAWABLE",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "<unknown>",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/anandkumar/StudioProjects/acviss-android/app/src/main/res/drawable",
+    "last_opened_file_path": "/Users/anandkumar/StudioProjects/Test/acviss-android/app/src/main/java/com/acviss/mercantile/di",
+    "project.structure.last.edited": "Dependencies",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "prodRelease"
+    ]
+  }
+}]]></component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.acviss.app.ui.activities.intro" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/acviss/mercantile/di" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/libs" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/raw" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/asuni/zenithra/ui/dashboard/face_scanner" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/asuni/zenithra/ui/dashboard/manga" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/asuni/zenithra/ui/dashboard" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/asuni/zenithra/ui/base" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/asuni/zenithra/ui/authentication" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.asuni.zenithra.domain" />
+      <recent name="com.asuni.zenithra.database.dao" />
+      <recent name="com.acviss.mercantile.ui.splash" />
+      <recent name="com.acviss.mercantile.viewmodels" />
+      <recent name="com.acviss.mercantile.ui.scanner" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.acviss.mercantile.di" />
+      <recent name="com.acviss.mercantile.util" />
+      <recent name="com.acviss.mercantile.util.helper" />
+    </key>
+    <key name="android.template.-1350225134">
+      <recent name="com.acviss.app.ui.fragments" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="acviss-android [./gradlew publishToMavenLocal]" />
+      <command value="gradle ./gradlew publishToMavenLocal " />
+      <command value="gradle assamble" />
+      <command value="gradle ./gradlew assable " />
+      <command value="acviss-android [./gradlew assable]" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="acviss-android.Mercantile.app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="acviss-android.Mercantile.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Zenithra.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="acviss-android [./gradlew assable]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="./gradlew" />
+            <option value="assable" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="acviss-android [./gradlew publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="./gradlew" />
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="acviss-android [assamble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assamble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Mercantile" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Mercantile" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.acviss-android [assamble]" />
+        <item itemvalue="Gradle.acviss-android [./gradlew publishToMavenLocal]" />
+        <item itemvalue="Gradle.acviss-android [./gradlew assable]" />
+        <item itemvalue="Gradle.acviss-android [assamble]" />
+        <item itemvalue="Gradle.acviss-android [./gradlew publishToMavenLocal]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3dc3b99-a815-4f93-996e-2edc585a526a" name="Changes" comment="" />
+      <created>1732265678970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732265678970</updated>
+    </task>
+    <task id="LOCAL-00102" summary="2B app-&#10;&#10;1. For the ILC return, when entering the customer code and customer doc as different values, after submitting on the front-end, the same customer code is reflected in the customer doc while update.">
+      <option name="closed" value="true" />
+      <created>1739527722776</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1739527722776</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Unicol bharosa&#10;&#10;1. version increased">
+      <option name="closed" value="true" />
+      <created>1739538143334</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1739538143334</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Unicol bharosa&#10;&#10;1. Theme color updated blue to red">
+      <option name="closed" value="true" />
+      <created>1739774432383</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1739774432384</updated>
+    </task>
+    <task id="LOCAL-00105" summary="2B app bugs fixed-&#10;&#10;1. While creating new log and search customer and add box and try to lock, that issue fixed.&#10;2. Scanned box delete issue fixed&#10;3. Scanned box list selection issue fixed">
+      <option name="closed" value="true" />
+      <created>1739791281677</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1739791281677</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Certify app-&#10;&#10;1. Implementing Feedback API">
+      <option name="closed" value="true" />
+      <created>1739795797035</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1739795797035</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Unicol vishwas app-&#10;&#10;1. Feed api version increased">
+      <option name="closed" value="true" />
+      <created>1739799983230</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1739799983230</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Certify App-&#10;&#10;1. The feedback module has been implemented.&#10;2. The permission grant issue has been fixed, and single-tap permission grant has been implemented.&#10;3. Support for multiple feed images has been implemented.&#10;4. Feed-to-library redirection has been implemented.&#10;5. Unnecessary dependencies have been removed.&#10;6. String texts have been added for all languages:&#10;   *. FAQ&#10;   *. No FAQ Added Yet&#10;   *. Please try again later&#10;   *. Share Your Experience&#10;   *. Write your review or feedback here...&#10;   *. Rate your experience&#10;   *. Your insights are important. Rate Certify and help us refine your experience.&#10;   *. Please provide feedback.&#10;   *. Feedback must be at least 10 characters long.&#10;   *. Feedback must not exceed 1000 characters.&#10;   *. Please rate your experience.&#10;   *. Your feedback helps us improve.&#10;   *. Thank you for sharing your thoughts!">
+      <option name="closed" value="true" />
+      <created>1739948052362</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1739948052363</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Certify App-&#10;&#10;1. SettingsFragment code replace with older">
+      <option name="closed" value="true" />
+      <created>1739949701539</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1739949701539</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Certify App-&#10;&#10;1. SettingsFragment code replace with older">
+      <option name="closed" value="true" />
+      <created>1739949918688</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1739949918688</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Certify App-&#10;&#10;1. SettingsFragment code replace with older">
+      <option name="closed" value="true" />
+      <created>1739950204675</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1739950204675</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Certify App-&#10;&#10;1. Notification">
+      <option name="closed" value="true" />
+      <created>1739950299422</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1739950299422</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Certify Factory app-&#10;&#10;1. Upgrading v2.1">
+      <option name="closed" value="true" />
+      <created>1740120366242</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1740120366242</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Hills cab&#10;&#10;1. Permission single tap added">
+      <option name="closed" value="true" />
+      <created>1740128977556</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1740128977556</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Hills cab&#10;&#10;1. Icon">
+      <option name="closed" value="true" />
+      <created>1740135283438</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1740135283438</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Hills cab&#10;&#10;1. Icon">
+      <option name="closed" value="true" />
+      <created>1740381122946</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1740381122947</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Hills cab&#10;&#10;1. Icon">
+      <option name="closed" value="true" />
+      <created>1740383903575</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1740383903575</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Hills cab&#10;&#10;1. Icon">
+      <option name="closed" value="true" />
+      <created>1740387357370</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1740387357370</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Hills cab&#10;&#10;1. Icon">
+      <option name="closed" value="true" />
+      <created>1740458802681</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1740458802681</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Hills cab&#10;&#10;[v1.5.6] - [25 Feb 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I699/]&#10;1. App Logo Update: Replace the existing app logo with the updated logo.&#10;2. Permissions Handling: Modify the app’s permission request flow to be controlled via a single button instead of multiple prompts.&#10;3. App Opening Animation: Implement the provided app opening animation.&#10;4. Tested Acvission Libarry for -&gt;&#10;   Product Details API Update: Ensure correct handling of status codes 103 and 105 for already scanned product codes.">
+      <option name="closed" value="true" />
+      <created>1740461247895</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1740461247895</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Certify Factory-&#10;&#10;1. commit">
+      <option name="closed" value="true" />
+      <created>1740483146934</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1740483146935</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Certify Factory-&#10;&#10;1. commit">
+      <option name="closed" value="true" />
+      <created>1740737681454</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1740737681454</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Certify Factory-&#10;&#10;1. Testing">
+      <option name="closed" value="true" />
+      <created>1740987582345</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1740987582346</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Certify Factory-&#10;&#10;1. Testing">
+      <option name="closed" value="true" />
+      <created>1741163134402</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1741163134403</updated>
+    </task>
+    <task id="LOCAL-00125" summary="bioncom credentials updated">
+      <option name="closed" value="true" />
+      <created>1741237080683</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1741237080683</updated>
+    </task>
+    <task id="LOCAL-00126" summary="Certify factory">
+      <option name="closed" value="true" />
+      <created>1741265721110</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1741265721110</updated>
+    </task>
+    <task id="LOCAL-00127" summary="Certify factory">
+      <option name="closed" value="true" />
+      <created>1741595516958</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1741595516958</updated>
+    </task>
+    <task id="LOCAL-00128" summary="Certify factory">
+      <option name="closed" value="true" />
+      <created>1741596166047</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1741596166047</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Certify factory&#10;&#10;*. Internet connectivity check&#10;*. Input field label title issue&#10;*. Scanner cache data issue&#10;*. Barcode invalid format scanning issue fixed">
+      <option name="closed" value="true" />
+      <created>1741774221988</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1741774221988</updated>
+    </task>
+    <task id="LOCAL-00130" summary="Certify factory&#10;&#10;*. Pull-down refresh implemented for history list">
+      <option name="closed" value="true" />
+      <created>1741847484529</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1741847484530</updated>
+    </task>
+    <task id="LOCAL-00131" summary="remove unsed lines">
+      <option name="closed" value="true" />
+      <created>1741847528549</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1741847528549</updated>
+    </task>
+    <task id="LOCAL-00132" summary="dependancy updated">
+      <option name="closed" value="true" />
+      <created>1741848839045</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1741848839045</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Certify Factory&#10;&#10;*. Privary Policies Text update&#10;*. Non-serialzed for part value reset and text show on scanner page added.&#10;*. Tourch and sound icon Updated">
+      <option name="closed" value="true" />
+      <created>1741872191484</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1741872191484</updated>
+    </task>
+    <task id="LOCAL-00134" summary="Certify Factory&#10;&#10;1. YML updated.&#10;2. Cred.. updated">
+      <option name="closed" value="true" />
+      <created>1742189627013</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1742189627013</updated>
+    </task>
+    <task id="LOCAL-00135" summary="2B app-&#10;&#10;[v1.2.3] - 19 March 2025- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I732&#10;1. Removed the FMC icon from the Scan Option screen and optimized the page layout.&#10;2. Removed the FMC icon from the Create Log Type Option screen and optimized the page layout.&#10;3. Handled the Box Assign API status for both failure and success with appropriate messages (&quot;Box assigned successfully!&quot; and &quot;Box assignment failed.&quot;).&#10;4. After all boxes are scanned, the Camera Scanner page will close and redirect to the Box List page.&#10;5. On the Document Details scan page, the box count layout is now hidden, as showing a count of 0 was unnecessary. Additionally, flashlight and camera lifecycle states (pause and resume) are managed.&#10;6. The Warehouse button visibility is now hidden on the Scan Box Type page for the OLC log type.&#10;7. Incorrect box count issue fixed on the backend (no changes in the Android code).">
+      <option name="closed" value="true" />
+      <created>1742385236067</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1742385236068</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Leotaps APP-&#10;&#10;[v1.0] - [20 March 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I790 ]&#10;1. Cloned the SNCAB app and replaced the server credentials and logos.&#10;2. Disabled the default splash screen.&#10;2. Modified the splash screen to display a static image.&#10;4. &quot;Powered by&quot; is now handled by the config/monolith API.">
+      <option name="closed" value="true" />
+      <created>1742539890172</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1742539890172</updated>
+    </task>
+    <task id="LOCAL-00137" summary="1. On the Sign-in page, the verify button disappearing when coming from the OTP page issue has been fixed.">
+      <option name="closed" value="true" />
+      <created>1742540809389</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1742540809389</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Certify Factory app-&#10;&#10;[v1.1.7] [24 March 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I788/ ]&#10;&#10;Developer Notes:&#10;1. Modified the Scanner screen to focus the camera box.&#10;2. Added a reset button in the input part to clear the previously scanned data.&#10;3. Fixed the issue where random special characters were sometimes added to the scanned barcode data.&#10;4. Create a base structure that will separate different concerns such as UI, data, and view models. This allows for easy navigation, scaling, and testing.">
+      <option name="closed" value="true" />
+      <created>1742808894897</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1742808894898</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Manifest modified">
+      <option name="closed" value="true" />
+      <created>1742967886195</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1742967886196</updated>
+    </task>
+    <task id="LOCAL-00140" summary="ReleaseNotes.txt updated">
+      <option name="closed" value="true" />
+      <created>1742967964564</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1742967964564</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Leotaps app-&#10;&#10;[v1.0.1] - [27 March 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I802 ]&#10;Dev notes-&#10;1. The privacy policy is now non-highlightable.&#10;2. The logo has been updated with a transparent color.&#10;3. Unnecessary code has been removed.&#10;4. Reward Library Update:&#10;   [v1.92] - [March 27, 2025] [Zoho] - Link&#10;       1. After auto-approval of loyalty, the page now refreshes automatically to display points.&#10;       2. A shimmer loader has been implemented on the home screen.">
+      <option name="closed" value="true" />
+      <created>1743078678360</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1743078678360</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Certify Factory app-&#10;&#10;[v1.1.8] [31 March 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I788/ ]&#10;1. Fixed the issue using the Zxing Library, where random special characters were sometimes added to the scanned barcode data.&#10;2. Updated the corner shape of the scanner focus area.">
+      <option name="closed" value="true" />
+      <created>1743415466204</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1743415466204</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Certify Factory app-&#10;&#10;1. UI changed">
+      <option name="closed" value="true" />
+      <created>1743483557681</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1743483557681</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Leo Wizard App-&#10;&#10;[v1.3.3] - [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;1. Acvission library update for fix crashed of casting reward points">
+      <option name="closed" value="true" />
+      <created>1743572936667</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1743572936668</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Uniqolable app&#10;&#10;[v9.89] [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;1. Loyalty Library updated for-&#10;    [v1.92] - [27 march 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I808&#10;        1. After auto-approval of loyalty, the page needs to refresh automatically to show points.&#10;        2. Shimmer loader has been implemented on the home screen.&#10;&#10;&#10;    [v1.91] - [27 Feb 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I739&#10;        1. Loyalty name: The XYZ name for the gone redeem button has been removed.&#10;        2. API error response: Handled and replaced toast with a dialog box.&#10;        3. Material dialog: Updated to use the native dialog box.&#10;&#10;3. Acvission Library Updated for-&#10;    [v3.6] [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;        1. Reward points type casting issue fixed&#10;&#10;    [v3.5] - 20 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. &quot;Find Acviss code&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;        2. &quot;Verifying with Acviss server&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;&#10;    [v3.4] - 19 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. Result Screen in Product Name text removed.&#10;        2. Scanned Response code 110 handled&#10;        3. Removed information text form string files&#10;        4. One New Text field added for batch code to separate serial No text&#10;&#10;    [v3.3] - 27 Feb 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I740]&#10;        1. GPS location permission and access dialog and lifecycle implemented.&#10;        2. String modified -&gt; GPS request denied to Location request denied&#10;        3. Material dialog: Updated to use the native dialog box.&#10;&#10;    [v3.2] - 26 Feb 2025 [Zoho-https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I725]&#10;        1. Location fetching. please wait toast removed.&#10;&#10;    [v3.1] - 14 Feb 2025&#10;        1. Config Acvission API implemented for Handle UI visibility from dashboard, [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I69]&#10;           1. Powered by&#10;           2. Mandatory Location while scanning&#10;           3. Fake report info on result screen&#10;             4. Download button on result screen&#10;        2. Implemented GSP location service, it will control from dashboard&#10;        3. String Text message added for all supported language.&#10;           1. GPS request denied&#10;           2. GPS is required for accurate location services.&#10;           3. Request again&#10;3.  For developer notes only(removed OTP less library from app, lib not found on git)&#10;4.  Single Tap permission implemented.&#10;5.  On OTP page keyboard automatically will gone after fill otp">
+      <option name="closed" value="true" />
+      <created>1743665423090</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1743665423091</updated>
+    </task>
+    <task id="LOCAL-00146" summary="Certify factory app-&#10;&#10;[v1.1.9] [3 Apr 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I788/ ]&#10;1. Added all type of barcode supportable in zxing library.">
+      <option name="closed" value="true" />
+      <created>1743670426978</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1743670426978</updated>
+    </task>
+    <task id="LOCAL-00147" summary="2b app-&#10;&#10;[v1.2.5] [3 Arp 2025] [Zoho-https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I806]&#10;QA(Prabhu) notes-&#10;1. After scanning the box in the ILC, I deleted the last box and scanned the wrong box from the batch I had already scanned. Then, I received a popup saying, &quot;All the boxes of this batch have been added successfully.&quot; After that, the scanner got stuck. I tried scanning the correct box, but it wouldn’t scan.&#10;2. A duplicate Log ID is created in the OLC when the user refreshes or reloads the page by pulling it down.&#10;3. On the home screen, the keypad for entering box IDs should automatically enter in uppercase.&#10;4. In the ILC, the serial numbers are not in order, and duplicate serial number entries are occurring.( not fixed- backend issue )">
+      <option name="closed" value="true" />
+      <created>1743674972711</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1743674972711</updated>
+    </task>
+    <task id="LOCAL-00148" summary="Biocon app-&#10;&#10;&#10;Publisher: Anand kumar&#10;Environment: ---&#10;Type: Release&#10;Version: 2.0.5&#10;Date: 7 Apr 2025&#10;Zoho: https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I837&#10;Release Notes:&#10;&#10;1. Certify Library updated for-&#10;&#10;    [v3.7] [03 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;        1. Points value implemented as float for remaining data class&#10;&#10;    [v3.6] [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;        1. Points value implemented as double&#10;&#10;    [v3.5] - 20 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. &quot;Find Acviss code&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;        2. &quot;Verifying with Acviss server&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;&#10;    [v3.4] - 19 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. Result Screen in Product Name text removed.&#10;        2. Scanned Response code 110 handled&#10;        3. Removed information text form string files&#10;        4. One New Text field added for batch code to separate serial No text&#10;&#10;2. Loyalty library Updated for-&#10;&#10;    [v1.93] - [02 Apr 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I819&#10;        1. Points value implemented as double&#10;&#10;    [v1.92] - [27 march 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I808&#10;        1. After auto-approval of loyalty, the page needs to refresh automatically to show points.&#10;        2. Shimmer loader has been implemented on the home screen.&#10;&#10;3. Removed deprecated library (otplessAndroidSdk) from the code, as it was unnecessary.">
+      <option name="closed" value="true" />
+      <created>1744011698153</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1744011698154</updated>
+    </task>
+    <task id="LOCAL-00149" summary="2B App-&#10;&#10;[v1.2.6] [8 Arp 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I838]&#10;1. Fixed issue where the camera remained open after the popup was dismissed.&#10;2. After one batch is successfully scanned, the laser continues for the next batch.">
+      <option name="closed" value="true" />
+      <created>1744100558052</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1744100558053</updated>
+    </task>
+    <task id="LOCAL-00150" summary="Biocon app-">
+      <option name="closed" value="true" />
+      <created>1744398002960</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1744398002960</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/certify_master_notification_feedback" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Certify factory" />
+    <MESSAGE value="Certify factory&#10;&#10;*. Internet connectivity check&#10;*. Input field label title issue&#10;*. Scanner cache data issue&#10;*. Barcode invalid format scanning issue fixed" />
+    <MESSAGE value="Certify factory&#10;&#10;*. Pull-down refresh implemented for history list" />
+    <MESSAGE value="remove unsed lines" />
+    <MESSAGE value="dependancy updated" />
+    <MESSAGE value="Certify Factory&#10;&#10;*. Privary Policies Text update&#10;*. Non-serialzed for part value reset and text show on scanner page added.&#10;*. Tourch and sound icon Updated" />
+    <MESSAGE value="Certify Factory&#10;&#10;1. YML updated.&#10;2. Cred.. updated" />
+    <MESSAGE value="2B app-&#10;&#10;[v1.2.3] - 19 March 2025- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I732&#10;1. Removed the FMC icon from the Scan Option screen and optimized the page layout.&#10;2. Removed the FMC icon from the Create Log Type Option screen and optimized the page layout.&#10;3. Handled the Box Assign API status for both failure and success with appropriate messages (&quot;Box assigned successfully!&quot; and &quot;Box assignment failed.&quot;).&#10;4. After all boxes are scanned, the Camera Scanner page will close and redirect to the Box List page.&#10;5. On the Document Details scan page, the box count layout is now hidden, as showing a count of 0 was unnecessary. Additionally, flashlight and camera lifecycle states (pause and resume) are managed.&#10;6. The Warehouse button visibility is now hidden on the Scan Box Type page for the OLC log type." />
+    <MESSAGE value="2B app-&#10;&#10;[v1.2.3] - 19 March 2025- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I732&#10;1. Removed the FMC icon from the Scan Option screen and optimized the page layout.&#10;2. Removed the FMC icon from the Create Log Type Option screen and optimized the page layout.&#10;3. Handled the Box Assign API status for both failure and success with appropriate messages (&quot;Box assigned successfully!&quot; and &quot;Box assignment failed.&quot;).&#10;4. After all boxes are scanned, the Camera Scanner page will close and redirect to the Box List page.&#10;5. On the Document Details scan page, the box count layout is now hidden, as showing a count of 0 was unnecessary. Additionally, flashlight and camera lifecycle states (pause and resume) are managed.&#10;6. The Warehouse button visibility is now hidden on the Scan Box Type page for the OLC log type.&#10;7. Incorrect box count issue fixed on the backend (no changes in the Android code)." />
+    <MESSAGE value="Leotaps APP-&#10;&#10;[v1.0] - [20 March 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I790 ]&#10;1. Cloned the SNCAB app and replaced the server credentials and logos.&#10;2. Disabled the default splash screen.&#10;2. Modified the splash screen to display a static image.&#10;4. &quot;Powered by&quot; is now handled by the config/monolith API." />
+    <MESSAGE value="1. On the Sign-in page, the verify button disappearing when coming from the OTP page issue has been fixed." />
+    <MESSAGE value="Certify Factory app-&#10;&#10;[v1.1.7] [24 March 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I788/ ]&#10;&#10;Developer Notes:&#10;1. Modified the Scanner screen to focus the camera box.&#10;2. Added a reset button in the input part to clear the previously scanned data.&#10;3. Fixed the issue where random special characters were sometimes added to the scanned barcode data.&#10;4. Create a base structure that will separate different concerns such as UI, data, and view models. This allows for easy navigation, scaling, and testing." />
+    <MESSAGE value="Manifest modified" />
+    <MESSAGE value="ReleaseNotes.txt updated" />
+    <MESSAGE value="Leotaps app-&#10;&#10;[v1.0.1] - [27 March 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I802 ]&#10;Dev notes-&#10;1. The privacy policy is now non-highlightable.&#10;2. The logo has been updated with a transparent color.&#10;3. Unnecessary code has been removed.&#10;4. Reward Library Update:&#10;   [v1.92] - [March 27, 2025] [Zoho] - Link&#10;       1. After auto-approval of loyalty, the page now refreshes automatically to display points.&#10;       2. A shimmer loader has been implemented on the home screen." />
+    <MESSAGE value="Certify Factory app-&#10;&#10;[v1.1.8] [31 March 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I788/ ]&#10;1. Fixed the issue using the Zxing Library, where random special characters were sometimes added to the scanned barcode data.&#10;2. Updated the corner shape of the scanner focus area." />
+    <MESSAGE value="Certify Factory app-&#10;&#10;1. UI changed" />
+    <MESSAGE value="Leo Wizard App-&#10;&#10;[v1.3.3] - [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;1. Acvission library update for fix crashed of casting reward points" />
+    <MESSAGE value="Uniqolable app&#10;&#10;&#10;[v9.89] [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;1. Loyalty Library updated for-&#10;    [v1.92] - [27 march 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I808&#10;        1. After auto-approval of loyalty, the page needs to refresh automatically to show points.&#10;        2. Shimmer loader has been implemented on the home screen.&#10;&#10;&#10;    [v1.91] - [27 Feb 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I739&#10;        1. Loyalty name: The XYZ name for the gone redeem button has been removed.&#10;        2. API error response: Handled and replaced toast with a dialog box.&#10;        3. Material dialog: Updated to use the native dialog box.&#10;&#10;3. Acvission Library Updated for-&#10;    [v3.6] [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;        1. Reward points type casting issue fixed&#10;&#10;    [v3.5] - 20 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. &quot;Find Acviss code&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;        2. &quot;Verifying with Acviss server&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;&#10;    [v3.4] - 19 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. Result Screen in Product Name text removed.&#10;        2. Scanned Response code 110 handled&#10;        3. Removed information text form string files&#10;        4. One New Text field added for batch code to separate serial No text&#10;&#10;    [v3.3] - 27 Feb 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I740]&#10;        1. GPS location permission and access dialog and lifecycle implemented.&#10;        2. String modified -&gt; GPS request denied to Location request denied&#10;        3. Material dialog: Updated to use the native dialog box.&#10;&#10;    [v3.2] - 26 Feb 2025 [Zoho-https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I725]&#10;        1. Location fetching. please wait toast removed.&#10;&#10;    [v3.1] - 14 Feb 2025&#10;        1. Config Acvission API implemented for Handle UI visibility from dashboard, [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I69]&#10;           1. Powered by&#10;           2. Mandatory Location while scanning&#10;           3. Fake report info on result screen&#10;             4. Download button on result screen&#10;        2. Implemented GSP location service, it will control from dashboard&#10;        3. String Text message added for all supported language.&#10;           1. GPS request denied&#10;           2. GPS is required for accurate location services.&#10;           3. Request again&#10;3.  For developer notes only(removed OTP less library from app, lib not found on git)&#10;4.  Single Tap permission implemented." />
+    <MESSAGE value="Uniqolable app&#10;&#10;[v9.89] [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;1. Loyalty Library updated for-&#10;    [v1.92] - [27 march 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I808&#10;        1. After auto-approval of loyalty, the page needs to refresh automatically to show points.&#10;        2. Shimmer loader has been implemented on the home screen.&#10;&#10;&#10;    [v1.91] - [27 Feb 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I739&#10;        1. Loyalty name: The XYZ name for the gone redeem button has been removed.&#10;        2. API error response: Handled and replaced toast with a dialog box.&#10;        3. Material dialog: Updated to use the native dialog box.&#10;&#10;3. Acvission Library Updated for-&#10;    [v3.6] [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;        1. Reward points type casting issue fixed&#10;&#10;    [v3.5] - 20 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. &quot;Find Acviss code&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;        2. &quot;Verifying with Acviss server&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;&#10;    [v3.4] - 19 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. Result Screen in Product Name text removed.&#10;        2. Scanned Response code 110 handled&#10;        3. Removed information text form string files&#10;        4. One New Text field added for batch code to separate serial No text&#10;&#10;    [v3.3] - 27 Feb 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I740]&#10;        1. GPS location permission and access dialog and lifecycle implemented.&#10;        2. String modified -&gt; GPS request denied to Location request denied&#10;        3. Material dialog: Updated to use the native dialog box.&#10;&#10;    [v3.2] - 26 Feb 2025 [Zoho-https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I725]&#10;        1. Location fetching. please wait toast removed.&#10;&#10;    [v3.1] - 14 Feb 2025&#10;        1. Config Acvission API implemented for Handle UI visibility from dashboard, [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I69]&#10;           1. Powered by&#10;           2. Mandatory Location while scanning&#10;           3. Fake report info on result screen&#10;             4. Download button on result screen&#10;        2. Implemented GSP location service, it will control from dashboard&#10;        3. String Text message added for all supported language.&#10;           1. GPS request denied&#10;           2. GPS is required for accurate location services.&#10;           3. Request again&#10;3.  For developer notes only(removed OTP less library from app, lib not found on git)&#10;4.  Single Tap permission implemented.&#10;5.  On OTP page keyboard automatically will gone after fill otp" />
+    <MESSAGE value="Certify factory app-&#10;&#10;[v1.1.9] [3 Apr 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I788/ ]&#10;1. Added all type of barcode supportable in zxing library." />
+    <MESSAGE value="2b app-&#10;&#10;[v1.2.5] [3 Arp 2025] [Zoho-https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I806]&#10;QA(Prabhu) notes-&#10;1. After scanning the box in the ILC, I deleted the last box and scanned the wrong box from the batch I had already scanned. Then, I received a popup saying, &quot;All the boxes of this batch have been added successfully.&quot; After that, the scanner got stuck. I tried scanning the correct box, but it wouldn’t scan.&#10;2. A duplicate Log ID is created in the OLC when the user refreshes or reloads the page by pulling it down.&#10;3. On the home screen, the keypad for entering box IDs should automatically enter in uppercase.&#10;4. In the ILC, the serial numbers are not in order, and duplicate serial number entries are occurring.( not fixed- backend issue )" />
+    <MESSAGE value="Biocon app-&#10;&#10;&#10;Publisher: Anand kumar&#10;Environment: ---&#10;Type: Release&#10;Version: 2.0.5&#10;Date: 7 Apr 2025&#10;Zoho: https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I837&#10;Release Notes:&#10;&#10;1. Certify Library updated for-&#10;&#10;    [v3.7] [03 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;        1. Points value implemented as float for remaining data class&#10;&#10;    [v3.6] [02 Apr 2025] [ Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I816/ ]&#10;        1. Points value implemented as double&#10;&#10;    [v3.5] - 20 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. &quot;Find Acviss code&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;        2. &quot;Verifying with Acviss server&quot; text is now dynamically changed and replaced with the app name, based on the selected app language.&#10;&#10;    [v3.4] - 19 March 2025 [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I786]&#10;        1. Result Screen in Product Name text removed.&#10;        2. Scanned Response code 110 handled&#10;        3. Removed information text form string files&#10;        4. One New Text field added for batch code to separate serial No text&#10;&#10;2. Loyalty library Updated for-&#10;&#10;    [v1.93] - [02 Apr 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I819&#10;        1. Points value implemented as double&#10;&#10;    [v1.92] - [27 march 2025] [Zoho] - https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I808&#10;        1. After auto-approval of loyalty, the page needs to refresh automatically to show points.&#10;        2. Shimmer loader has been implemented on the home screen.&#10;&#10;3. Removed deprecated library (otplessAndroidSdk) from the code, as it was unnecessary." />
+    <MESSAGE value="2B App-&#10;&#10;[v1.2.6] [8 Arp 2025] [Zoho- https://sprints.zoho.com/workspace/acviss#P2/itemdetails/I838]&#10;1. Fixed issue where the camera remained open after the popup was dismissed.&#10;2. After one batch is successfully scanned, the laser continues for the next batch." />
+    <MESSAGE value="Biocon app-" />
+    <option name="LAST_COMMIT_MESSAGE" value="Biocon app-" />
+  </component>
+  <component name="com.apollographql.ijplugin.settings.ProjectSettingsState">
+    <option name="hasEnabledGraphQLPluginApolloKotlinSupport" value="true" />
+    <option name="lspPassPathToSuperGraphYaml" value="false" />
+    <option name="telemetryInstanceId" value="774427f7-f867-4f75-8be7-8c91be4efa58" />
+  </component>
+</project>

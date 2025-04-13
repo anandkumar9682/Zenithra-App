@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_icon_empty_box.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/icon_empty_box.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_icon_info_red.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/icon_info_red.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_icon_back_v2.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/icon_back_v2.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_icon_apple.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/icon_apple.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_icon_close.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/icon_close.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/xml_network_security_config.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_icon_success.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/icon_success.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_eye_close.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/eye_close.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_icon_google.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/icon_google.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_eye_open.xml.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/eye_open.xml"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/drawable_zenithra_logo.png.flat",
+        "source": "com.asuni.zenithra.app-main-101:/drawable/zenithra_logo.png"
+    },
+    {
+        "merged": "com.asuni.zenithra.app-stageDebug-99:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.asuni.zenithra.app-main-101:/mipmap-xhdpi/ic_launcher_round.webp"
+    }
+]

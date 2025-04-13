@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.asuni.zenithra.app-mergeStageDebugResources-97:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/Users/anandkumar/.gradle/caches/8.9/transforms/107303b65624879aba668cbfdf659baa/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

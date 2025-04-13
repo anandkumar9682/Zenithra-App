@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "389884580155",
+    "firebase_url": "https://red-caller-default-rtdb.firebaseio.com",
+    "project_id": "red-caller",
+    "storage_bucket": "red-caller.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389884580155:android:936af0ee943a929a3e271e",
+        "android_client_info": {
+          "package_name": "com.asuni.zenithra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389884580155-0qslqgd2gfjaiao3hi6ajq1l1po6to0l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.asuni.zenithra",
+            "certificate_hash": "d70d4ea6cb17d906824d6f389b66af597c09f5a9"
+          }
+        },
+        {
+          "client_id": "389884580155-its056qvc41gre7sd36j1i67vjnkhtlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJrvy5tLymX6BlJR-XEcDxmHCFaaTlSW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389884580155-its056qvc41gre7sd36j1i67vjnkhtlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389884580155:android:503775c1f2a80f513e271e",
+        "android_client_info": {
+          "package_name": "com.asuni.zenithra.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389884580155-0ujre7vb9a5m1uojk6gv1vdtuj4mvhbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.asuni.zenithra.stage",
+            "certificate_hash": "d70d4ea6cb17d906824d6f389b66af597c09f5a9"
+          }
+        },
+        {
+          "client_id": "389884580155-its056qvc41gre7sd36j1i67vjnkhtlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJrvy5tLymX6BlJR-XEcDxmHCFaaTlSW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389884580155-its056qvc41gre7sd36j1i67vjnkhtlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389884580155:android:6301471b854f0a693e271e",
+        "android_client_info": {
+          "package_name": "com.asunitech.red_caller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389884580155-8t0d93cvs38rmet5pfm3ek8p3rn0ed4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.asunitech.red_caller",
+            "certificate_hash": "ab3793dc242d4a1385f71d5ec915a3a6cfcab190"
+          }
+        },
+        {
+          "client_id": "389884580155-its056qvc41gre7sd36j1i67vjnkhtlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJrvy5tLymX6BlJR-XEcDxmHCFaaTlSW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389884580155-its056qvc41gre7sd36j1i67vjnkhtlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
