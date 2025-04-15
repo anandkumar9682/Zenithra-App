@@ -63,11 +63,13 @@ MangaFace App is a multi-functional mobile application that allows users to auth
 
 ## Screenshots
 
+### Dark Mode Screenshots
+  ![Dark_mode](Screenshots/Dark_mode.png)
+
+  
 ### Light Mode Screenshots
   ![Light Mode](Screenshots/Light_mode.jpg)
 
-### Dark Mode Screenshots
-  ![Dark_mode](Screenshots/Dark_mode.png)
 
 ## Videos
    ### Dark Mode Video
