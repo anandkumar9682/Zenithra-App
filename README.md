@@ -1,4 +1,4 @@
-# MangaFace App
+![Dark_mode](https://github.com/user-attachments/assets/6904df79-7ea2-4517-8cf2-77f5caa3cc1b)# MangaFace App
 
 MangaFace App is a multi-functional mobile application that allows users to authenticate via email/password or Google Sign-In, view a dashboard of manga content from an external API, and utilize a camera-based feature with ML Kit for real-time face detection. The app also supports dark and light themes.
 
@@ -63,41 +63,9 @@ MangaFace App is a multi-functional mobile application that allows users to auth
 
 ## Screenshots
 
+### Light Mode Screenshots
+  ![Light Mode](Screenshots/Light_mode.jpg)
+
 ### Dark Mode Screenshots
-
-- **Manga List**
-  ![Manga List](Screenshots/MangaList.jpg)
-  *Dashboard displaying a list of manga items.*
-
-- **Manga Details**
-  ![Manga Details](Screenshots/MangaDetails.jpg)
-  *Detailed view of a selected manga item.*
-
-- **Face Detected (Green Indicator)**
-  ![Face Found](Screenshots/FaceFound.jpg)
-  *Camera view with a face detected (green indicator).*
-
-- **Face Not Detected (Red Indicator)**
-  ![Face Not Found](Screenshots/FaceNotFound.jpg)
-  *Camera view with no face detected (red indicator).*
-
-- **Sign In Screen**
-  ![Sign In](Screenshots/SignIn.jpg)
-  *User sign-in screen.*
-
-- **Sign Up Screen**
-  ![Sign Up](Screenshots/SignUp.jpg)
-  *User sign-up screen.*
-
-- **Sign Out Screen**
-  ![Sign Out](Screenshots/SingOut.jpg)
-  *User sign-out screen.*
-
-- **Forgot Password Screen**
-  ![Forgot Password](Screenshots/ForgetPassowrd.jpg)
-  *Forgot password functionality.*
-
-- **Empty Manga State**
-  ![Empty Manga](Screenshots/EmpltyManga.jpg)
-  *View when no manga content is available.*
+  ![Dark_mode](Screenshots/Dark_mode.jpg)
 
