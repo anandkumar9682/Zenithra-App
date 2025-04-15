@@ -1,5 +1,7 @@
-![Dark_mode](Screenshots/Light_mode.jpg)# MangaFace App
+![Dark_mode](Screenshots/Light_mode.jpg)
+Below are Night mode theme images attached
 
+# MangaFace App
 MangaFace App is a multi-functional mobile application that allows users to authenticate via email/password or Google Sign-In, view a dashboard of manga content from an external API, and utilize a camera-based feature with ML Kit for real-time face detection. The app also supports dark and light themes.
 
 ---
