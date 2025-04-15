@@ -35,7 +35,7 @@ class AuthRepository @Inject constructor(
         try {
             val result = firebaseHelper.signUp(name, mobile, email, password)
             if (result.first) {
-                sharedPreferenceHelper.setBoolean(IS_LOGED_IN, true)
+//                sharedPreferenceHelper.setBoolean(IS_LOGED_IN, true)
                 emit(ApiResponse.Success(result))
             } else {
                 emit(ApiResponse.Error(result.second))

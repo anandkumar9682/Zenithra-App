@@ -135,20 +135,13 @@ fun SignUpScreen(activity: Activity, navController: NavController, viewModel: Au
     val password = remember { mutableStateOf("") }
     val passwordError = remember { mutableStateOf("") }
 
-
-    val focusRequesterEmailId = remember { FocusRequester() }
-    val isFocusedEmailId = remember { mutableStateOf(false) }
-
-    val focusRequesterPassword = remember { FocusRequester() }
-    val isFocusedPassword = remember { mutableStateOf(false) }
-
     val signUpStatus by viewModel.signUpStatus.collectAsState()
     LaunchedEffect(signUpStatus) {
         when (signUpStatus) {
             is ApiResponse.Success -> {
                 context.showToast( signUpStatus.data?.second ?: "Something went wrong")
-                viewModel.clearLoginRequest()
-                navController.navigateToDashboard()
+                viewModel.clearSignUpRequest()
+                navController.navigateToSignIn()
             }
             is ApiResponse.Error -> {
                 context.showToast( signUpStatus.errorMessage ?: "Something went wrong")
@@ -157,12 +150,7 @@ fun SignUpScreen(activity: Activity, navController: NavController, viewModel: Au
         }
     }
 
-
-    var errorMessage = remember { mutableStateOf("") }
     var showToast by remember { mutableStateOf(false) }
-
-    var isLoading = remember { mutableStateOf(false) }
-
 
     val keyboardController = LocalSoftwareKeyboardController.current
     LaunchedEffect(showToast) {
@@ -178,35 +166,6 @@ fun SignUpScreen(activity: Activity, navController: NavController, viewModel: Au
     val surfaceColor = if (isDarkTheme) Color(0xFF2C2C2C) else Color.White
     val textColor = if (isDarkTheme) Color.White else Color.Black
 
-    val launcher = rememberLauncherForActivityResult(
-        contract = ActivityResultContracts.StartActivityForResult()
-    ) { result ->
-        val data = result.data
-        try {
-            if (data == null) {
-                context.showToast("Google Sign-In Failed: No data")
-                return@rememberLauncherForActivityResult
-            }
-
-            val account = GoogleSignIn.getSignedInAccountFromIntent(data)
-                .getResult(ApiException::class.java)
-
-            val idToken = account?.idToken
-            if (idToken.isNullOrEmpty()) {
-                context.showToast("Google Sign-In Failed: Token null")
-            } else {
-                viewModel.firebaseAuthWithGoogle(idToken)
-            }
-        } catch (e: Exception) {
-            Log.d("TestLog",e.toString())
-            context.showToast("Google Sign-In Failed: ${e.message}")
-        }
-    }
-
-    val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-        .requestIdToken(stringResource(R.string.default_web_client_id)) // Replace with real client ID
-        .requestEmail()
-        .build()
 
     ConstraintLayout (
         modifier = Modifier
@@ -234,13 +193,7 @@ fun SignUpScreen(activity: Activity, navController: NavController, viewModel: Au
             contentAlignment = Alignment.Center
         ) {
             ConstraintLayout() {
-                val (
-                    tvAppName, tvWelcome, tvDetails, btnGoogle, btnApple,
-                    nameId, mobileId,
-                    emailId, passwordId, forgetPassword,
-                    continueButton,
-                    dividerRow, signupType, tvSignUpLay, toastMessage
-                ) = createRefs()
+                val (tvAppName, tvWelcome, tvDetails, nameId, mobileId, emailId, passwordId, continueButton, tvSignUpLay) = createRefs()
 
                 val focusManager = LocalFocusManager.current
 
