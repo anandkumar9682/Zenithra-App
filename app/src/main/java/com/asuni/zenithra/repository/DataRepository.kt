@@ -5,7 +5,6 @@ import com.asuni.zenithra.domain.MangaItemEntity
 import com.asuni.zenithra.domain.toEntity
 import com.asuni.zenithra.network.NetworkApi
 import com.asuni.zenithra.network.model.ApiResponse
-import com.asuni.zenithra.network.model.MangaItem
 import com.asuni.zenithra.network.model.MangaResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -30,8 +29,8 @@ class DataRepository @Inject constructor(
      *
      * @return A list of manga items from the local database.
      */
-    suspend fun fetchLocalMangaList(): List<MangaItemEntity> {
-        return appDatabase.mangaDao.getAllManga()
+    suspend fun fetchLocalMangaList(limit: Int, offset: Int): List<MangaItemEntity> {
+        return appDatabase.mangaDao.getMangaByPage(limit = limit, offset = offset)
     }
 
     /**
@@ -55,7 +54,6 @@ class DataRepository @Inject constructor(
             val response = withContext(Dispatchers.IO) {
                 apiService.fetchManga(page, genres, nsfw, type)
             }
-
             if (response.isSuccessful) {
                 response.body()?.let {
                     // Save the fetched data into the local database
@@ -67,78 +65,6 @@ class DataRepository @Inject constructor(
                 val error = response.errorBody()?.string() ?: "Unknown error"
                 emit(ApiResponse.Error("API Error: $error"))
             }
-
-//            val dummyResponse = MangaResponse(
-//                code = 200,
-//                data = listOf(
-//                    MangaItem(
-//                        isDummy = false,
-//                        id = "1",
-//                        title = "The Cat Warrior",
-//                        subTitle = "A Feline's Journey",
-//                        status = "Ongoing",
-//                        thumb = "https://picsum.photos/id/237/200/300",
-//                        summary = "A brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\nA brave cat embarks on an epic quest to protect its clan.\n",
-//                        authors = listOf("Anand Kumar"),
-//                        genres = listOf("Action", "Adventure", "Fantasy"),
-//                        nsfw = false,
-//                        type = "Manga",
-//                        totalChapter = 12,
-//                        createdAt = System.currentTimeMillis(),
-//                        updatedAt = System.currentTimeMillis()
-//                    ),
-//                    MangaItem(
-//                        isDummy = false,
-//                        id = "2",
-//                        title = "Pixel Chronicles",
-//                        subTitle = "Glitched Realms",
-//                        status = "Completed",
-//                        thumb = "https://picsum.photos/seed/picsum/200/300",
-//                        summary = "A teen discovers a digital realm inside his console.",
-//                        authors = listOf("A. K. Bind"),
-//                        genres = listOf("Sci-Fi", "Mystery"),
-//                        nsfw = false,
-//                        type = "Manhwa",
-//                        totalChapter = 45,
-//                        createdAt = System.currentTimeMillis(),
-//                        updatedAt = System.currentTimeMillis()
-//                    ),
-//                    MangaItem(
-//                        isDummy = false,
-//                        id = "3",
-//                        title = "Silent Shades",
-//                        subTitle = "The Grey Horizon",
-//                        status = "Hiatus",
-//                        thumb = "https://picsum.photos/200/300?grayscale",
-//                        summary = "In a colorless world, one boy sees the truth.",
-//                        authors = listOf("K. Anand"),
-//                        genres = listOf("Drama", "Psychological", "Supernatural"),
-//                        nsfw = false,
-//                        type = "Webtoon",
-//                        totalChapter = 20,
-//                        createdAt = System.currentTimeMillis(),
-//                        updatedAt = System.currentTimeMillis()
-//                    ),
-//                    MangaItem(
-//                        isDummy = false,
-//                        id = "4",
-//                        title = "Blurred Lines",
-//                        subTitle = null,
-//                        status = "Ongoing",
-//                        thumb = "https://picsum.photos/200/300/?blur",
-//                        summary = "A detective with blurred memories solves surreal crimes.",
-//                        authors = listOf("Zenithra"),
-//                        genres = listOf("Mystery", "Thriller"),
-//                        nsfw = true,
-//                        type = "Doujinshi",
-//                        totalChapter = 10,
-//                        createdAt = System.currentTimeMillis(),
-//                        updatedAt = System.currentTimeMillis()
-//                    )
-//                )
-//            )
-//            emit(ApiResponse.Success(dummyResponse))
-
 
         } catch (e: Exception) {
             emit(ApiResponse.Error("Exception: ${e.message ?: "Something went wrong"}"))

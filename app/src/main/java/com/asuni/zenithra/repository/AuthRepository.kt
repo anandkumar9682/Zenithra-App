@@ -56,6 +56,7 @@ class AuthRepository @Inject constructor(
         try {
             val response = firebaseHelper.login(loginRequest)
             if (response.first) {
+                appDatabase.usersDao.deleteAllUsers()
                 sharedPreferenceHelper.setBoolean(IS_LOGED_IN, true) // Store login status
                 emit(ApiResponse.Success(response))
             } else {
@@ -116,6 +117,7 @@ class AuthRepository @Inject constructor(
         try {
             val result = firebaseHelper.signInWithGoogle(idToken)
             if (result.first) {
+                appDatabase.usersDao.deleteAllUsers()
                 sharedPreferenceHelper.setBoolean(IS_LOGED_IN, true)
                 emit(ApiResponse.Success(result))
             } else {

@@ -1,5 +1,6 @@
 package com.asuni.zenithra.ui.dashboard.manga
 
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
@@ -41,11 +42,38 @@ import com.asuni.zenithra.viewmodels.DataViewModel
 
 @Composable
 fun MagnaScreen(viewModel: DataViewModel, navController: NavController) {
-
-    val listState = rememberLazyListState()
     val context = LocalContext.current
+    val listState = rememberLazyListState()
+    val isConnected = remember { mutableStateOf(NetworkUtils.isInternetAvailable(context)) }
+    LaunchedEffect(Unit) {
+        NetworkObserver.startListening(context)
+        NetworkObserver.isConnected.observeForever {
+            isConnected.value = it
+        }
+    }
 
     val mangaList by viewModel.mangaList.collectAsState()
+
+    LaunchedEffect(Unit) {
+        NetworkObserver.startListening(context)
+        NetworkObserver.isConnected.observeForever {
+            isConnected.value = it
+        }
+        // Fetch data on launch
+        viewModel.refreshData(isConnected.value)
+    }
+
+    LaunchedEffect(listState) {
+        snapshotFlow { listState.layoutInfo.visibleItemsInfo }
+            .collect { visibleItems ->
+                val lastVisibleIndex = visibleItems.lastOrNull()?.index ?: return@collect
+                val totalItems = listState.layoutInfo.totalItemsCount
+                if (lastVisibleIndex >= totalItems - 3) {
+                    viewModel.fetchMangaList(isConnected.value)
+                }
+            }
+    }
+
 
     // 🔁 Pagination Trigger
     LaunchedEffect(listState) {
@@ -56,7 +84,7 @@ fun MagnaScreen(viewModel: DataViewModel, navController: NavController) {
                 val totalItems = listState.layoutInfo.totalItemsCount
 
                 if (lastVisibleIndex >= totalItems - 3 && mangaList !is ApiResponse.Loading) {
-                    viewModel.fetchMangaList()
+                    viewModel.fetchMangaList(isConnected = isConnected.value)
                 }
             }
     }
@@ -80,23 +108,6 @@ fun MagnaScreen(viewModel: DataViewModel, navController: NavController) {
         )
     }
 
-    val isConnected = remember { mutableStateOf(NetworkUtils.isInternetAvailable(context)) }
-
-    LaunchedEffect(Unit) {
-        NetworkObserver.startListening(context)
-        NetworkObserver.isConnected.observeForever {
-            isConnected.value = it
-        }
-    }
-
-    LaunchedEffect(Unit) {
-        if(isConnected.value){
-            viewModel.fetchMangaList()
-        }else{
-            viewModel.fetchLocalMangaList()
-        }
-    }
-
     val displayList = if (viewModel.mangaItems.isNotEmpty()) {
         viewModel.mangaItems
     } else if (mangaList is ApiResponse.Loading) {
@@ -105,6 +116,7 @@ fun MagnaScreen(viewModel: DataViewModel, navController: NavController) {
 
 
     if (displayList.isNotEmpty()) {
+        Log.d("TestLog"," ${ displayList.size }")
         LazyColumn(state = listState, modifier = Modifier.padding(vertical = 4.dp)) {
             items(displayList.chunked(3)) { rowItems ->
                 Row(
@@ -143,9 +155,9 @@ fun MagnaScreen(viewModel: DataViewModel, navController: NavController) {
         }
 
     } else {
-
+        Log.d("TestLog"," ${ displayList.size }")
         var isDarkTheme = isSystemInDarkTheme()
-        val backgroundColor = if (isDarkTheme) Color(0xFF121212) else Color.White
+
         val textColor = if (isDarkTheme) Color.White else Color.Black
 
 

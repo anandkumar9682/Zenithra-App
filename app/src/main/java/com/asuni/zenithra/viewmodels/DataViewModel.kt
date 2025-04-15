@@ -27,6 +27,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+
 @HiltViewModel
 class DataViewModel @Inject constructor(
     private val dataRepository: DataRepository
@@ -35,63 +36,71 @@ class DataViewModel @Inject constructor(
     private val _mangaList = MutableStateFlow<ApiResponse<MangaResponse>>(ApiResponse.Clear())
     val mangaList: StateFlow<ApiResponse<MangaResponse>> = _mangaList
 
+    var mangaItems = mutableStateListOf<MangaItem>()
+
     var selectedGenres by mutableStateOf("")
     var selectedType by mutableStateOf("all")
     var nsfwEnabled by mutableStateOf(true)
     var currentPage by mutableStateOf(1)
-
-    val mangaItems = mutableStateListOf<MangaItem>() // Replace `Manga` with your actual item model
-
     private var isFetching = false
 
-    fun fetchMangaList() {
+    val pageSize = 20
+    var pageNumber = 1
+
+    fun fetchMangaList(isConnected: Boolean) {
         if (isFetching) return
         isFetching = true
 
-        viewModelScope.launch(Dispatchers.IO) {
-            dataRepository.fetchMangaList(
-                page = currentPage,
-                genres = selectedGenres,
-                nsfw = nsfwEnabled,
-                type = selectedType
-            ).collect { apiResponse ->
-                _mangaList.value = apiResponse
+        if (isConnected) {
+            viewModelScope.launch(Dispatchers.IO) {
+                dataRepository.fetchMangaList(
+                    page = currentPage,
+                    genres = selectedGenres,
+                    nsfw = nsfwEnabled,
+                    type = selectedType
+                ).collect { response ->
+                    _mangaList.value = response
 
-                when (apiResponse) {
-                    is ApiResponse.Success -> {
-                        apiResponse.data?.data?.let { newItems ->
-                            if (newItems.isNotEmpty()) {
-                                val uniqueNewItems = newItems.filterNot { newItem ->
-                                    mangaItems.any { existing -> existing.id == newItem.id }
-                                }
-                                if (uniqueNewItems.isNotEmpty()) {
-                                    mangaItems.addAll(uniqueNewItems)
-                                    currentPage++
-                                }
+                    if (response is ApiResponse.Success) {
+                        response.data?.data?.let { newItems ->
+                            val filtered = newItems.filterNot { apiItem ->
+                                mangaItems.any { it.id == apiItem.id }
+                            }
+                            if (filtered.isNotEmpty()) {
+                                mangaItems.addAll(filtered)
+                                currentPage++
                             }
                         }
-                        isFetching = false
                     }
-
-                    is ApiResponse.Error -> {
-                        isFetching = false
-                    }
-
-                    else -> Unit
+                    isFetching = false
                 }
             }
+        } else {
+            fetchLocalMangaList()
+        }
+    }
+
+    fun fetchLocalMangaList() {
+        val offset = (pageNumber - 1) * pageSize
+        viewModelScope.launch(Dispatchers.IO) {
+            val localItems = dataRepository.fetchLocalMangaList(pageSize, offset)
+                .map { it.toMangaItem() }
+            mangaItems.addAll(localItems)
+            pageNumber++
+            isFetching = false
+        }
+    }
+
+    fun refreshData(isConnected: Boolean) {
+        viewModelScope.launch {
+            mangaItems.clear()
+            currentPage = 1
+            pageNumber = 1
+            fetchMangaList(isConnected)
         }
     }
 
     fun getMangaItemById(mangaItemId: String): MangaItem? {
         return mangaItems.firstOrNull { it.id == mangaItemId }
     }
-
-    fun fetchLocalMangaList(){
-        viewModelScope.launch(Dispatchers.IO) {
-            val localMangaItems =   dataRepository.fetchLocalMangaList().map { item -> item.toMangaItem() }
-            mangaItems.addAll(localMangaItems)
-        }
-    }
-
 }

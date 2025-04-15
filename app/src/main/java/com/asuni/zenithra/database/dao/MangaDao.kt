@@ -19,8 +19,8 @@ interface MangaDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertAll(mangaList: List<MangaItemEntity>)
 
-    @Query("SELECT * FROM manga_items") // adjust table name
-    suspend fun getAllManga(): List<MangaItemEntity>
+    @Query("SELECT * FROM manga_items LIMIT :limit OFFSET :offset")
+    suspend fun getMangaByPage(limit: Int, offset: Int): List<MangaItemEntity>
 
     @Query("DELETE FROM manga_items")
     suspend fun clearAll()

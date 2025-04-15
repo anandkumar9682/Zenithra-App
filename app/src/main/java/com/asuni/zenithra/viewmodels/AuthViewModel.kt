@@ -18,6 +18,7 @@ import com.asuni.zenithra.network.model.ApiResponse
 import com.asuni.zenithra.repository.AuthRepository
 import com.asuni.zenithra.ui.authentication.models.LoginRequest
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -32,7 +33,7 @@ class AuthViewModel @Inject constructor(
     val signUpStatus: StateFlow<ApiResponse<Pair<Boolean, String>>> = _signUpStatus
 
     fun signUp(name: String, mobile: String, email: String, password: String) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             authRepository.signUp(name, mobile, email, password).collect {
                 _signUpStatus.value = it
             }
@@ -47,7 +48,7 @@ class AuthViewModel @Inject constructor(
     val loginStatus: StateFlow<ApiResponse<Pair<Boolean, String>>> = _loginStatus
 
     fun login(email: String, password: String) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             // Construct the LoginRequest
             val request = LoginRequest(
                 email = email,
@@ -66,7 +67,7 @@ class AuthViewModel @Inject constructor(
     private val _signout = MutableStateFlow<ApiResponse<Boolean>>(ApiResponse.Clear())
     val signout: StateFlow<ApiResponse<Boolean>> = _signout
     fun signout() {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             authRepository.logout().collect { apiResponse ->
                 _signout.value = ApiResponse.Success(apiResponse.data?.first) // Update state with the response
             }
@@ -81,7 +82,7 @@ class AuthViewModel @Inject constructor(
     val resetPasswordStatus: StateFlow<ApiResponse<Pair<Boolean, String>>> = _resetPasswordStatus
     // New reset password method
     fun resetPassword(email: String) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             authRepository.resetPassword(email).collect { apiResponse ->
                 _resetPasswordStatus.value = apiResponse // Update UI state based on the reset response
             }
@@ -96,7 +97,7 @@ class AuthViewModel @Inject constructor(
     private val _firebaseAuthWithGoogleStatus = MutableStateFlow<ApiResponse<Pair<Boolean, String>>>(ApiResponse.Clear())
     val firebaseAuthWithGoogleStatus: StateFlow<ApiResponse<Pair<Boolean, String>>> = _firebaseAuthWithGoogleStatus
     fun firebaseAuthWithGoogle(idToken: String) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             // Construct OTP verification request
             authRepository.signInWithGoogle(idToken).collect { apiResponse ->
                 _firebaseAuthWithGoogleStatus.value = apiResponse // Update state with the response

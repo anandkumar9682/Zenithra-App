@@ -73,13 +73,11 @@ import androidx.constraintlayout.compose.Dimension
 import androidx.navigation.NavController
 import com.asuni.zenithra.R
 import com.asuni.zenithra.network.model.ApiResponse
-import com.asuni.zenithra.ui.navigations.NavRoute
 import com.asuni.zenithra.ui.theme.HeadingTextSize
 import com.asuni.zenithra.ui.theme.MessageTextSize12
 import com.asuni.zenithra.ui.theme.MessageTextSize14
 import com.asuni.zenithra.ui.theme.PrimaryLight
 import com.asuni.zenithra.util.navigateToDashboard
-import com.asuni.zenithra.util.navigateToSignIn
 import com.asuni.zenithra.util.navigateToSignUp
 import com.asuni.zenithra.util.showToast
 import com.asuni.zenithra.util.validateEmail

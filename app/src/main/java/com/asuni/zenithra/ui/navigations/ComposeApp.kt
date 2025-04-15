@@ -9,23 +9,25 @@
 package com.asuni.zenithra.ui.navigations
 
 import android.app.Activity
-import androidx.compose.animation.*
+import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.google.accompanist.navigation.animation.AnimatedNavHost
-import com.google.accompanist.navigation.animation.composable
-import com.asuni.zenithra.ui.dashboard.DashboardScreen
-import com.asuni.zenithra.ui.main.SplashScreen
-import com.asuni.zenithra.util.navigateToDashboard
-import com.asuni.zenithra.viewmodels.AuthViewModel
-import com.asuni.zenithra.viewmodels.DataViewModel
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.rememberNavController
 import com.asuni.zenithra.ui.authentication.SignInScreen
 import com.asuni.zenithra.ui.authentication.SignUpScreen
+import com.asuni.zenithra.ui.dashboard.DashboardScreen
+import com.asuni.zenithra.ui.main.SplashScreen
+import com.asuni.zenithra.util.navigateToDashboard
 import com.asuni.zenithra.util.navigateToSignIn
+import com.asuni.zenithra.viewmodels.AuthViewModel
+import com.asuni.zenithra.viewmodels.DataViewModel
+import com.google.accompanist.navigation.animation.AnimatedNavHost
+import com.google.accompanist.navigation.animation.composable
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable

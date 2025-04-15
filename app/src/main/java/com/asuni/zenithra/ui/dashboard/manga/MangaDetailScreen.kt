@@ -1,5 +1,6 @@
 package com.asuni.zenithra.ui.dashboard.manga
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.horizontalScroll
@@ -23,6 +24,8 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -38,7 +41,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.wear.compose.material.Chip
 import androidx.wear.compose.material.ChipDefaults
-import coil.compose.AsyncImage
 import coil.compose.AsyncImagePainter
 import coil.compose.rememberAsyncImagePainter
 import com.asuni.zenithra.R
@@ -105,26 +107,59 @@ fun MangaDetailScreen(
                 val painter = rememberAsyncImagePainter(model = mangaItem.thumb)
                 val state = painter.state
 
-                Box(
+
+                var isImageLoading = remember { mutableStateOf(true) }
+
+                Column(
                     modifier = Modifier
                         .width(120.dp)
-                        .height(160.dp)
-                        .clip(RoundedCornerShape(12.dp))
-                        .border(2.dp, Color.Gray, RoundedCornerShape(12.dp))
+                        .height(170.dp)
+                        .clip(RoundedCornerShape(8.dp)),
+                    horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    if (state is AsyncImagePainter.State.Loading) {
-                        ShimmerPlaceholder(
-                            modifier = Modifier
-                                .fillMaxSize()
-                        )
-                    }
+                    Box(
+                        modifier = Modifier
+                            .height(140.dp)
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(8.dp))
+                            .border(1.dp, Color.Gray, RoundedCornerShape(8.dp)) // Add border around the Box
+                    ) {
+                        if (isImageLoading.value) {
+                            ShimmerPlaceholder(modifier = Modifier.fillMaxSize())
+                        }
 
-                    AsyncImage(
-                        model = mangaItem.thumb,
-                        contentDescription = "Manga Thumbnail",
-                        contentScale = ContentScale.Crop,
-                        modifier = Modifier.matchParentSize()
-                    )
+                        val painter = rememberAsyncImagePainter(
+                            model = mangaItem.thumb,
+                            error = painterResource(id = R.drawable.icon_image_failure) // default if load fails
+                        )
+
+                        val state = painter.state
+                        isImageLoading.value = state is AsyncImagePainter.State.Loading
+
+                        Box(
+                            modifier = Modifier.matchParentSize()
+                        ) {
+                            if (state is AsyncImagePainter.State.Error) {
+                                // Show error image with specific size when loading fails
+                                Image(
+                                    painter = painterResource(id = R.drawable.icon_image_failure),
+                                    contentDescription = "Error Image",
+                                    contentScale = ContentScale.Crop,
+                                    modifier = Modifier
+                                        .size(40.dp) // Set size of error image
+                                        .align(Alignment.Center) // Center the error image within the Box
+                                )
+                            } else {
+                                // Show the loaded image
+                                Image(
+                                    painter = painter,
+                                    contentDescription = "Manga Image",
+                                    contentScale = ContentScale.Crop,
+                                    modifier = Modifier.matchParentSize()
+                                )
+                            }
+                        }
+                    }
                 }
 
                 Column(

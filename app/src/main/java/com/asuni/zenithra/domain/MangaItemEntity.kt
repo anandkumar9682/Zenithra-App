@@ -1,5 +1,6 @@
 package com.asuni.zenithra.domain
 
+import android.util.Log
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.asuni.zenithra.network.model.MangaItem
@@ -52,7 +53,9 @@ fun MangaItem.toEntity(): MangaItemEntity = MangaItemEntity(
  * Extension function to convert MangaItemEntity to MangaItem.
  * Converts comma-separated authors and genres strings back into lists.
  */
-fun MangaItemEntity.toMangaItem(): MangaItem = MangaItem(
+fun MangaItemEntity.toMangaItem(): MangaItem {
+Log.d("TestLog","$this")
+return MangaItem(
     id = id,
     title = title,
     subTitle = subTitle,
@@ -65,5 +68,5 @@ fun MangaItemEntity.toMangaItem(): MangaItem = MangaItem(
     type = type,
     totalChapter = totalChapter,
     createdAt = createdAt,
-    updatedAt = updatedAt
-)
+    updatedAt = updatedAt)
+}
