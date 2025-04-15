@@ -78,3 +78,20 @@ MangaFace App is a multi-functional mobile application that allows users to auth
    ### Light Mode Video
    ![Light_mode] (Play)](https://github.com/anandkumar9682/Zenithra-App/blob/main/Videos/Day_Light_mode.mp4?raw=true)
 
+
+## 📁 Photo and Video on Google Drive
+
+You can also access all project-related media and APKs via Google Drive:
+
+- 🔗 **All in One Drive Folder**  
+  [Photos, Videos, APKs](https://drive.google.com/drive/folders/1soZs0psxfll7TnwLifY1cgw4F9yLiOOO?usp=sharing)
+
+- 📱 **APK Files Only**  
+  [Download APKs](https://drive.google.com/drive/folders/1_wC_cGxc2K9ouwtq4YOG1hdJp98kwQ0Q?usp=sharing)
+
+- 🖼️ **Screenshots / Images**  
+  [View Photos](https://drive.google.com/drive/folders/1Zit2GFDKZkLlvT7x3fkJvz-zg_APGOkL?usp=sharing)
+
+- 🎥 **Demo Videos**  
+  [Watch Videos](https://drive.google.com/drive/folders/1i8HS4A2EK_Z4ITIVkxzkEn_hajbdxP5z?usp=sharing)
+
