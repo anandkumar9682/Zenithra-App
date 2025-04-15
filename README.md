@@ -73,8 +73,8 @@ MangaFace App is a multi-functional mobile application that allows users to auth
 
 ## Videos
    ### Dark Mode Video
-   [![Night Dark Mode](Screenshots/Dark_mode.png)](https://github.com/anandkumar9682/Zenithra-App/blob/main/Videos/Night_Dark_mode.mp4?raw=true)
+   [![Night Dark Mode](Play)](https://github.com/anandkumar9682/Zenithra-App/blob/main/Videos/Night_Dark_mode.mp4?raw=true)
 
    ### Light Mode Video
-   ![Light_mode](Videos/Day_Light_mode.mp4)
+   ![Light_mode] (Play)](https://github.com/anandkumar9682/Zenithra-App/blob/main/Videos/Day_Light_mode.mp4?raw=true)
 
